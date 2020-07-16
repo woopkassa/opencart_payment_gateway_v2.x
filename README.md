@@ -1,6 +1,6 @@
 # opencart_payment_gateway_v2.x
 Woopkassa payment gateway for OpenCart CMS as a module. Supported version 2.*
-##Установка
+## Установка
 * Кликнуть на зеленую кнопку "Code"
 * В появившемся окне выбрать "Download ZIP"
 * Скачать архив в любое удобное место
