@@ -35,7 +35,7 @@ class ControllerExtensionPaymentWooppay extends Controller
 				$invoice_request->backUrl = $this->url->link('checkout/success');
 				$invoice_request->requestUrl = str_replace('&amp;', '&', $this->url->link('extension/payment/wooppay/callback', 'order=' . $order_info['order_id'] . '&key=' . md5($order_info['order_id']), 'SSL'));
 				$invoice_request->addInfo = 'Оплата заказа №' . $order_info['order_id'];
-				$invoice_request->amount = (float)$this->currency->format($order_info['total'], 'KZT', '', false);
+				$invoice_request->amount = $order_info['total'];
 				$invoice_request->serviceName = $this->config->get('wooppay_service');
 				$invoice_request->deathDate = '';
 				$invoice_request->description = 'Оплата заказа №' . $order_info['order_id'];
